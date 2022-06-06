@@ -1,6 +1,6 @@
 {
   "name": "@yonchando/carouseljs",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Carousel slide with easy config and responsive html.",
   "main": "carousel.js",
   "scripts": {
