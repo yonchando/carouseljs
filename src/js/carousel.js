@@ -1,3 +1,5 @@
+require('jquery');
+
 $.fn.carousel = function (options = {}) {
     return $.each(this, (i, el) => {
         const $this = $(el);

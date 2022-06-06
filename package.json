@@ -2,9 +2,12 @@
   "name": "@yonchando/carouseljs",
   "version": "1.0.0",
   "description": "Carousel slide with easy config and responsive html.",
-  "main": "carousel.js",
+  "main": "dist/js/carousel.js",
+  "style": "dist/css/carousel.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx mix",
+    "watch": "npx mix --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/yonchando/carousel/issues"
   },
-  "homepage": "https://github.com/yonchando/carousel#readme"
+  "homepage": "https://github.com/yonchando/carousel#readme",
+  "devDependencies": {
+    "jquery": "^3.6.0",
+    "laravel-mix": "^6.0.48",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^12.1.0"
+  }
 }
