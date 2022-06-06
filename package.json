@@ -1,6 +1,6 @@
 {
   "name": "@yonchando/carouseljs",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Carousel slide with easy config and responsive html.",
   "main": "carousel.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "carouseljs"
   ],
   "author": "Yon Chando",
-  "license": "MIT",
+  "license": "MIT License",
   "bugs": {
     "url": "https://github.com/yonchando/carousel/issues"
   },

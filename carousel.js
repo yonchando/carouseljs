@@ -1,4 +1,4 @@
-$.fn.carousel = function (options = {}) {
+const carousel = function (options = {}) {
     return $.each(this, (i, el) => {
         const $this = $(el);
         const carouselContents = $(`<div class="carousel-contents ${options.carouselContentClass ?? ''}" style="position:relative;"></div>`);
@@ -77,3 +77,5 @@ $.fn.carousel = function (options = {}) {
         })
     });
 }
+
+module.export = carousel;
