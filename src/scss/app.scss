@@ -10,16 +10,21 @@
         flex-wrap: nowrap;
     }
 
-    .btn-control {
+    .control-left, .control-right {
+        position: absolute;
+        border-radius: $btnBorderRadius;
+        width: $btnWidthSize;
+        height: $btnHeightSize;
+        top: $btnControlTop;
         border-width: 1px;
         border-style: solid;
         border-color: rgb(239 239 239 / var(1));
         background-color: $btnBg;
         color: $btnColor;
-        position: relative;
-        display: inline-block;
+        display: flex;
+        justify-items: center;
+        align-items: center;
         user-select: none;
-        border-radius: 0.5rem;
         padding: 0.4375rem 0.875rem;
         text-align: center;
         vertical-align: middle;
@@ -28,16 +33,11 @@
         line-height: 1.5rem;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         cursor: pointer;
-    }
 
-    .control-left, .control-right {
-        position: absolute;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        border-radius: $btnBorderRadius;
-        width: $btnWidthSize;
-        height: $btnHeightSize;
-        top: $btnControlTop;
+        i,span {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     .carousel .control-left {
