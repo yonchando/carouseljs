@@ -18,7 +18,7 @@
         top: $btnControlTop;
         border-width: 1px;
         border-style: solid;
-        border-color: rgb(239 239 239 / var(1));
+        border-color: $borderColor;
         background-color: $btnBg;
         color: $btnColor;
         display: flex;
