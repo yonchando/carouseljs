@@ -5,7 +5,7 @@ Carousel is the simple slider responsive.
 
 This carousel.js is required [jquery](https://jquery.com "jquery.com") package.<br>
 
-> npm i @yonchando/carousel-js
+> npm i @yonchando/carouseljs
 
 ## Usage Example
 
