@@ -1,6 +1,6 @@
 {
   "name": "@yonchando/carouseljs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Carousel slide with easy config and responsive html.",
   "main": "dist/js/carousel.js",
   "style": "dist/css/carousel.css",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/yonchando/carousel#readme",
   "devDependencies": {
+    "jquery": "^3.6.0",
     "laravel-mix": "^6.0.48",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.52.2",
