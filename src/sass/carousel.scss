@@ -3,22 +3,37 @@
 .carousel {
     position: relative;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    user-select: none;
 
-    .carousel-contents {
-        display: flex;
-        flex-wrap: nowrap;
+
+    .carousel-slider {
+        &.active {
+            cursor: grabbing;
+        }
+
+        .carousel-contents {
+            pointer-events: none;
+            display: flex;
+            flex-wrap: nowrap;
+            scroll-snap-type: y mandatory;
+
+            .carousel-item {
+                scroll-snap-align: start;
+            }
+        }
     }
 
     .control-left, .control-right {
+        z-index: 999;
         position: absolute;
         border-radius: $btnBorderRadius;
         width: $btnWidthSize;
         height: $btnHeightSize;
         top: $btnControlTop;
+        transform: translateY(-$btnControlTop);
         border-width: 1px;
         border-style: solid;
-        border-color: rgb(239 239 239 / var(1));
+        border-color: rgb(239 239 239 / 1);
         background-color: $btnBg;
         color: $btnColor;
         display: flex;
@@ -34,7 +49,7 @@
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         cursor: pointer;
 
-        i,span {
+        i, span {
             text-align: center;
             width: 100%;
         }
