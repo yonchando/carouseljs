@@ -20,7 +20,7 @@ You need to import css/js to your project file.
 <html>
 <head>
     <-- add carouseljs style -->
-    <link rel="stylesheet" href="node_modules/@yonchando/carouseljs/dist/css/carousel.js">
+    <link rel="stylesheet" href="node_modules/@yonchando/carouseljs/dist/css/carousel.css">
 </head>
 <body>
 <div class="carousel">
