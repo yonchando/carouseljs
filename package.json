@@ -1,6 +1,6 @@
 {
   "name": "@yonchando/carouseljs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Carousel slide with easy config and responsive html.",
   "main": "dist/js/carousel.js",
   "style": "dist/css/carousel.css",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yonchando/carousel.git"
+    "url": "git+https://github.com/yonchando/carouseljs.git"
   },
   "keywords": [
     "carouseljs"
