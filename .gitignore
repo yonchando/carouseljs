@@ -4,4 +4,3 @@ yarn-error.log
 .vscode
 node_modules
 package-lock.json
-webpack.mix.js
