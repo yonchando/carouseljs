@@ -1,11 +1,10 @@
 {
   "name": "@yonchando/carouseljs",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Carousel slide with easy config and responsive html.",
   "main": "dist/js/carousel.js",
   "style": "dist/css/carousel.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "mix --production",
     "watch": "mix watch"
   },
@@ -14,14 +13,17 @@
     "url": "git+https://github.com/yonchando/carouseljs.git"
   },
   "keywords": [
-    "carouseljs"
+    "carouseljs",
+    "jquery",
+    "javascript",
+    "slider"
   ],
   "author": "Yon Chando",
   "license": "MIT License",
   "bugs": {
-    "url": "https://github.com/yonchando/carousel/issues"
+    "url": "https://github.com/yonchando/carouseljs/issues"
   },
-  "homepage": "https://github.com/yonchando/carousel#readme",
+  "homepage": "https://github.com/yonchando/carouseljs#readme",
   "devDependencies": {
     "jquery": "^3.6.0",
     "laravel-mix": "^6.0.48",
