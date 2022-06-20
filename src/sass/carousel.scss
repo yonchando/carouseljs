@@ -5,7 +5,6 @@
     overflow-x: hidden;
     user-select: none;
 
-
     .carousel-slider {
         &.active {
             cursor: grabbing;
@@ -15,11 +14,6 @@
             pointer-events: none;
             display: flex;
             flex-wrap: nowrap;
-            scroll-snap-type: y mandatory;
-
-            .carousel-item {
-                scroll-snap-align: start;
-            }
         }
     }
 
