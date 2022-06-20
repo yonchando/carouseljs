@@ -127,9 +127,9 @@ window.$ = window.jQuery = require('jquery');
 
         const wrapper = $(element);
         const contents = wrapper.children('.carousel-contents');
-        const childWidth = contents.width() / contents.children('.carousel-item').length;
+        const childWidth = contents.width() / contents.children('.carousel-content-item').length;
 
-        wrapper.on('mousedown taphold', function (e) {
+        wrapper.on('mousedown', function (e) {
             isDown = true;
             $(this).addClass('active');
             pageX = e.originalEvent.pageX - wrapper.offset().left;
@@ -168,7 +168,7 @@ window.$ = window.jQuery = require('jquery');
             $(this).removeClass('active');
         });
 
-        wrapper.on('mousemove swipe', function (e) {
+        wrapper.on('mousemove', function (e) {
             if (!isDown) return;
             e.preventDefault();
             const x = e.originalEvent.pageX - wrapper.offset().left;
@@ -201,7 +201,7 @@ window.$ = window.jQuery = require('jquery');
             const $this = $(el);
             const sliders = $(`<div class="carousel-slider"></div>`);
             const carouselContents = $(`<div class="carousel-contents ${carouselContentClass}" style="position:relative;"></div>`);
-            const carouselItem = $this.children().addClass('carousel-item');
+            const carouselItem = $this.children().addClass('carousel-content-item');
 
             // wrap children to div
             carouselContents.append(carouselItem);
