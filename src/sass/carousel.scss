@@ -3,17 +3,34 @@
 .carousel {
     position: relative;
     overflow-x: hidden;
-    user-select: none;
 
     .carousel-slider {
-        &.active {
-            cursor: grabbing;
-        }
-
         .carousel-contents {
+            z-index: 20;
+            position: relative;
             pointer-events: none;
             display: flex;
             flex-wrap: nowrap;
+
+            .carousel-content-item {
+                pointer-events: auto;
+            }
+        }
+    }
+
+    &.draggable {
+        user-select: none;
+        -webkit-user-drag: none;
+
+        .carousel-slider {
+            &.active {
+                cursor: grabbing;
+            }
+            .carousel-contents {
+                .carousel-content-item {
+                    pointer-events: none;
+                }
+            }
         }
     }
 

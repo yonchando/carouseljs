@@ -5,14 +5,14 @@ window.$ = window.jQuery = require('jquery');
 
     const ItemResponsive = function (options) {
         let {
-            items = 1,
+            items = undefined,
             slideBy = 1,
             sliderWidths,
             carouselItem,
             responsive,
         } = options;
 
-        if (items === 1) {
+        if (items === undefined) {
             responsive = {
                 640: {
                     items: 1,
@@ -189,14 +189,15 @@ window.$ = window.jQuery = require('jquery');
     $.fn.carousel = function (options) {
         return $.each(this, (i, el) => {
             const {
-                items = 1,
+                items = undefined,
                 carouselContentClass = '',
                 responsive,
                 slideBy = 1,
                 controlClass = '',
                 btnClass = '',
                 draggable = true,
-                btnIcon = {}
+                btnIcon,
+                showArrowButton = true,
             } = options;
 
             const $this = $(el);
@@ -227,16 +228,18 @@ window.$ = window.jQuery = require('jquery');
             carouselItem.css('width', `${carouselItemWidth}px`);
             const widthToScroll = carouselContentWidths - (carouselItemWidth * (carouselItem.length - slideBy));
 
-            // control button
-            const control = ControlButton({
-                controlClass: controlClass,
-                btnClass: btnClass,
-                widthToScroll,
-                lastItem,
-                btnIcon,
-                carouselContents
-            });
-            $this.append(control);
+            if(showArrowButton){
+                // control button
+                const control = ControlButton({
+                    controlClass: controlClass,
+                    btnClass: btnClass,
+                    widthToScroll,
+                    lastItem,
+                    btnIcon,
+                    carouselContents
+                });
+                $this.append(control);
+            }
 
             // draggable
             if (draggable) {
